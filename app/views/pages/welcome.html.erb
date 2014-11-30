@@ -1,0 +1,24 @@
+<h1>ToDo App using Angular.js</h1>
+<div ng-app="app">
+
+  <div ng-controller="todoCtrl">
+
+    <div id="todos">
+      <ul>
+        <li ng-repeat="todo in todos" ng-if="positive(todo.text)" ng-click="strikeTask(todo)" ng-class="{completed: todo.finishness}"> {{ todo.text }}</li>
+      <ul>
+    </div>
+
+   
+
+
+    <br>
+    <input ng-model="newTask">
+    <button ng-click="addTask(newTask)">Add Task</button>
+
+
+
+
+  </div>
+
+</div>
