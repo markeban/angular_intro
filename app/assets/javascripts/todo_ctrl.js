@@ -33,14 +33,9 @@
     };
 
     $scope.strikeTask = function(task) {
-      if (task.finishness) {
-        task.finishness = false;
-      }
-      else {
-        task.finishness = true;
-      }
+      task.finishness = !task.finishness;
 
-    }
+    };
 
 
 

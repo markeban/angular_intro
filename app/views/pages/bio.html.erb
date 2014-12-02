@@ -1,0 +1,20 @@
+<h1>Interesting People</h1>
+
+
+
+
+<div ng-app="app">
+
+  <div ng-controller="bioCtrl">
+
+      <ul>
+        <li ng-repeat="bio in bios" ng-click="toggleVisible(bio)"  > <p>  {{ bio.name }} DELETE:<input type="checkbox" ng-click="deleteBio(bio)"></p><p ng-if="bio.visible"> {{ bio.bio }} </p></li>
+        <li ng-model=""
+      <ul>
+
+
+
+
+  </div>
+
+</div>

@@ -5,5 +5,13 @@
 
 
 .completed {
-    text-decoration: line-through;
+  text-decoration: line-through;
+}
+
+.invisible {
+  display: none;
+}
+
+.visible {
+  display: inline;
 }
